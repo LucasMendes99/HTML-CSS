@@ -1,4 +1,19 @@
-body, ul,li,p{
+/* O que é margin e padding? */
+/* Margin é o espaço entre o elemento e o elemento pai, 
+já o padding é o espaço entre o elemento e o conteúdo do 
+elemento. */
+/* padding-top, padding-right, padding-bottom, padding-left */
+/* margin-top, margin-right, margin-bottom, margin-left */
+/* O que é top, right, bottom, left? */
+/* São as posições que podemos usar para definir o espaçamento
+de um elemento. */
+/*left - A margem à esquerda do elemento
+right - A margem à direita do elemento
+top - A margem acima do elemento
+bottom - A margem abaixo do elemento */
+/*Content - O conteúdo da caixa, onde texto e imagens aparecem */
+
+body, ul, li,p{
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -9,38 +24,22 @@ a{
     text-decoration: none;
     color: white;
 }
-h1{
-    text-align: center;
-    margin-top: 100px;
-}
-img{
-    max-width: 100%;
-    display: block;
-}
 .header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color:#1d1e20;
+    justify-content: space-between;
+    background-color: black;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 .menu{
     display: flex;
 }
 .menu li{
-    margin-right: 10px;
+    margin-left: 50px;
 }
-.menu li a{
+.menu li a {
     display: block;
-    padding: 10px;
-}
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.flex > div{
-    flex: 1 1 200px;
-    margin: 0 10px;
+    padding: 5px;
+    background: tomato;
 }
