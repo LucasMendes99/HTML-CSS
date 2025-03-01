@@ -12,7 +12,7 @@ right - A margem à direita do elemento
 top - A margem acima do elemento
 bottom - A margem abaixo do elemento */
 /*Content - O conteúdo da caixa, onde texto e imagens aparecem */
-
+/* CSS Grid Layout - Quando tenho uma divisao de linha e coluna*/
 body, ul, li,p{
     margin: 0px;
     padding: 0px;
@@ -24,22 +24,39 @@ a{
     text-decoration: none;
     color: white;
 }
+h1{
+    text-align: center;
+    margin-top: 100px;
+
+}
+img{
+    max-width: 100%;
+}
 .header{
+    background: #1d1e20;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
 }
 .menu{
     display: flex;
 }
 .menu li{
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .menu li a {
     display: block;
-    padding: 5px;
-    background: tomato;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
 }
